@@ -1,6 +1,6 @@
 # 🩸 [2025 kakao X 9oorm 시즌톤] 4팀 단짝이
 
-
+<img width="882" height="493" alt="Image" src="https://github.com/user-attachments/assets/558069d1-e825-49ca-b4a6-f59cd673831c" />
 
 1형 당뇨 아동을 위한 게이미피케이션 기반 자가관리 플랫폼
 
