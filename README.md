@@ -281,6 +281,13 @@ Spring-Service/
 2. SLF4J 기반 로깅: `common/exception/ExceptionAdvice.java` - 전역 예외 로깅
 3. Swagger를 통한 API 모니터링: `common/config/SwaggerConfig.java` - API 문서화 및 모니터링
 
+---
+
+# 애플리케이션 소개
+
+<img width="882" height="493" alt="Image" src="https://github.com/user-attachments/assets/558069d1-e825-49ca-b4a6-f59cd673831c" />
+
+1형 당뇨 아동을 위한 게이미피케이션 기반 자기관리 플랫폼
 
 ### 👨‍💻 백엔드 개발자
 
