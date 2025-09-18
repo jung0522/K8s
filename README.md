@@ -287,5 +287,5 @@ Spring-Service/
 -  AI-Service 🟢  
   🔗 [정준영](https://github.com/Jung0522)
 - Spring-Service 🔵  
-  🔗 [GitHub](https://github.com/kimcheolsu)
+  🔗 [김채원](https://github.com/KimChaeWon12)
 
