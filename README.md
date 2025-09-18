@@ -6,7 +6,7 @@
 - 문제 해결에 적절한 기술 스택 선택이 되었는가?
 
 - **Flask (Python 3.11)** - AI 서비스 (LLM 기반 퀘스트 생성, RAG 기반 전문적 혈당 분석 후 피드백 제공)  
-- **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 중심 설계)
+- **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 중심 설계, 에러 헨들링·보안·로깅 준수)
 - **MySQL** - 메인 데이터베이스  
 - **ChromaDB** - 벡터 데이터베이스 (RAG용)  
 - **Docker Compose** - 컨테이너화 및 배포  
