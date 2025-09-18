@@ -125,7 +125,7 @@ AI-Service/
 4. **시스템 상태 모니터링:** `app/api/v1/endpoints/health.py`
 
 
-### 👨‍💻 개발자
+### 👨‍💻 백엔드 개발자
 
 - **정준영 (June Young Jung)** - AI-Service 🟢  
   🔗 [정준영](https://github.com/Jung0522)
