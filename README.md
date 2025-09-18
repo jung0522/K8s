@@ -1,6 +1,6 @@
 # 🩸 [2025 kakao X 9oorm 시즌톤] 4팀 단짝이
 
-<img width="882" height="493" alt="Image" src="https://github.com/user-attachments/assets/558069d1-e825-49ca-b4a6-f59cd673831c" />
+<img width="876" height="488" alt="Image" src="https://github.com/user-attachments/assets/f2eb2c2c-f591-4187-8d76-ee94ee7b0b51" />
 
 
 # 기술 구현
