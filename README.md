@@ -176,6 +176,20 @@ Spring-Service/
 2. 인터페이스 기반 설계: `domain/member/repository/MemberRepository.java` - CrudRepository 확장
 3. 커스텀 어노테이션으로 확장성 확보: `domain/member/annotation/AuthUser.java` - 인증 사용자 주입
 
+### 효율성 고려 
+- 불필요한 오버엔지니어링 없이 효율적 구현하였는가?
+
+#### AI-Service(Python): 
+1. **캐싱 전략:** `app/utils/auth/jwt_auth.py` – 토큰 캐싱  
+2. **성능 모니터링:** `app/utils/monitoring/performance_monitor.py` – 성능 추적  
+3. **데이터베이스 성능 최적화:** `app/models/database_models.py` – 인덱스 설정  
+4. **RAG 최적화:** `app/services/chroma_rag_service.py` – 벡터 검색 최적화
+
+#### Spring-Service/danjjang (Java)
+1. 공통 엔티티로 중복 제거: `common/entity/BaseTimeEntity.java`
+2. 매핑 로직 분리로 서비스 계층 간소화: `domain/member/service/MemberMapper.java`
+3. 커스텀 어노테이션으로 인증 간소화: `domain/member/annotation/AuthUserArgumentResolver.java`
+
 
 ---
 ### 코드 품질
