@@ -193,12 +193,17 @@ Spring-Service/
 
 ---
 ### 코드 품질
-- 가독성, 모듈화, 재사용성을 고려한 코드 작성 여부  
+- 가독성, 모듈화, 재사용성을 고려한 코드 작성 여부
 
+#### AI-Service(Python): 
 1. **가독성:** `app/utils/business/glucose_utils.py` - 명확한 함수명과 변수명  
 2. **모듈화:** 계층별 모듈 분리  
-3. **재사용성:** `app/utils/error/error_handler.py` - 공통 유틸리티 함수  
-4. **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`  
+3. **재사용성:** `app/utils/error/error_handler.py` - 공통 유틸리티 함수, **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`
+
+#### Spring-Service/danjjang (Java)
+1. **가독성:**: `domain/member/service/MemberService.java` - 비즈니스 로직의 명확한 표현
+2. **모듈화:** 계층별 모듈 분리  
+3. **재사용성:** `common/apiPayload/ApiResponse.java` - 공통 유틸리티 함수  
 
 ---
 
