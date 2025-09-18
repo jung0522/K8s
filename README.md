@@ -171,6 +171,10 @@ Spring-Service/
 
 ➡️ 새로운 API 구현은 위 순서로 유연하게 확장 가능  
 
+#### Spring-Service/danjjang (Java)
+1. 도메인 중심 설계 (DDD) 적용: domain/ 패키지로 비즈니스 로직 분리
+2. 공통 모듈화로 재사용성 극대화: `common/apiPayload/ApiResponse.java` - 표준화된 API 응답 구조
+
 ---
 ### 코드 품질
 - 가독성, 모듈화, 재사용성을 고려한 코드 작성 여부  
