@@ -198,57 +198,88 @@ Spring-Service/
 #### AI-Service(Python): 
 1. **가독성:** `app/utils/business/glucose_utils.py` - 명확한 함수명과 변수명  
 2. **모듈화:** 계층별 모듈 분리  
-3. **재사용성:** `app/utils/error/error_handler.py` - 공통 유틸리티 함수, **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`
+3. **재사용성:** `app/utils/error/error_handler.py` - 공통 유틸리티 함수,
+4. **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`
 
 #### Spring-Service/danjjang (Java)
 1. **가독성:**: `domain/member/service/MemberService.java` - 비즈니스 로직의 명확한 표현
 2. **모듈화:** 계층별 모듈 분리  
-3. **재사용성:** `common/apiPayload/ApiResponse.java` - 공통 유틸리티 함수, **데코레이터 패턴 활용:** `common/jwt/filter/JwtAuthenticationFilter.java` 
+3. **재사용성:** `common/apiPayload/ApiResponse.java` - 공통 유틸리티 함수,
+4. **데코레이터 패턴 활용:** `common/jwt/filter/JwtAuthenticationFilter.java` 
 
 ---
 
 ### 유지보수성
 - 코드 수정 및 기능 개선이 용이한가?  
 
+#### AI-Service(Python)
 1. **의존성 주입:** `app/__init__.py` - 팩토리 패턴  
-2. **인터페이스 분리:** `app/utils/auth/authorization.py` - 권한 시스템  
+2. **인터페이스 분리:** `app/utils/auth/authorization.py` - 권한 시스템 (ISP 준수)
+
+#### Spring-Service/danjjang (Java)
+1. **의존성 주입:**: `domain/member/service/MemberService.java`
+2. **인터페이스 분리:**: `domain/member/repository/MemberRepository.java` (ISP 준수)
+
 
 ---
 
 ### 에러 핸들링
 - API 응답, 예외 상황에 대해 적절히 처리하였는가?  
 
+#### AI-Service(Python)
 1. **계층화된 에러 클래스:** `app/utils/error/error_handler.py`  
 2. **API 레벨 예외 처리:** `app/api/v1/endpoints/parents.py`  
-3. **전역 예외 핸들러 등록:** `app/__init__.py`  
+3. **전역 예외 핸들러 등록:** `app/__init__.py`
+
+#### Spring-Service/danjjang (Java)
+1. 중앙화된 예외 처리: `common/exception/ExceptionAdvice.java` - 전역 예외 처리 핵심
+2. 에러 코드 표준화: `common/apiPayload/code/status/ErrorCode.java` - 에러 코드 정의
+3. 입력 검증 예외 처리: `domain/member/dto/MemberRequestDTO.java` - 입력 검증(Bean Validation 활용)
 
 ---
 
 ### 사용자 경험
 - 오류 발생 시 사용자 친화적 메시지를 제공하였는가?  
 
+#### AI-Service(Python)
 1. **구조화된 사용자 메시지:** `app/utils/error/user_messages.py`  
 2. **상황별 맞춤 메시지:** `app/utils/error/error_handler.py`  
+
+#### Spring-Service/danjjang (Java)
+1. 명확하고 이해하기 쉬운 에러 메시지: `common/apiPayload/code/status/ErrorCode.java`
+2. 예외 상황별 맞춤형 메시지: `domain/member/service/MemberService.java` - 도메인별 예외 메시지
 
 ---
 
 ### 보안 고려사항
 - 입력 검증, 인증/인가, 민감정보 보호 여부  
 
+#### AI-Service(Python)
 1. **포괄적인 입력 검증:** `app/utils/auth/input_validator.py`  
 2. **강력한 JWT 인증:** `app/utils/auth/jwt_auth.py`  
 3. **역할 기반 접근 제어:** `app/utils/auth/authorization.py`  
-4. **보안 이벤트 추적:** `app/utils/auth/security_logger.py`  
+4. **보안 이벤트 추적:** `app/utils/auth/security_logger.py`
+
+#### Spring-Service/danjjang (Java)
+1. JWT 기반 강력한 인증 시스템: `common/jwt/TokenProvider.java` - 보안 강화된 JWT 구현
+2. 권한 기반 접근 제어: `common/jwt/TokenProvider.java` - 세분화된 권한 관리
+3. 데이터베이스 보안: `domain/member/entity/Member.java` - 엔티티 레벨 보안
 
 ---
 
 ### 모니터링
-- 로깅, 디버깅이 용이한가?  
+- 로깅, 디버깅이 용이한가?
 
+#### AI-Service(Python)
 1. **체계적인 로깅 설정:** `app/core/logging.py`  
 2. **성능 추적:** `app/utils/monitoring/performance_monitor.py`  
 3. **에러 통계 수집:** `app/utils/monitoring/monitoring.py`  
 4. **시스템 상태 모니터링:** `app/api/v1/endpoints/health.py`
+
+#### Spring-Service/danjjang (Java)
+1. 보안 이벤트 로깅: `common/jwt/TokenProvider.java` - 보안 로깅
+2. SLF4J 기반 로깅: `common/exception/ExceptionAdvice.java` - 전역 예외 로깅
+3. Swagger를 통한 API 모니터링: `common/config/SwaggerConfig.java` - API 문서화 및 모니터링
 
 
 ### 👨‍💻 백엔드 개발자
