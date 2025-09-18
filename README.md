@@ -56,7 +56,108 @@ AI-Service/
 ```
 
 #### Spring-Service/danjjang (Java)
+```plaintext
+Spring-Service/
+└── danjjang/                                    # 메인 Spring Boot 프로젝트
+    └── src/
+        ├── main/
+        │   ├── java/com/cloud/danjjang/
+        │   │   ├── DanjjangApplication.java     
+        │   │   │
+        │   │   ├── common/                      # 공통 모듈
+        │   │   │   ├── apiPayload/              # API 응답 표준화
+        │   │   │   │   ├── ApiResponse.java
+        │   │   │   │   └── code/
+        │   │   │   │       ├── BaseCode.java
+        │   │   │   │       ├── BaseErrorCode.java  # 에러 헨들링 클래스들
+        │   │   │   │       ├── ErrorReasonDTO.java
+        │   │   │   │       ├── ReasonDTO.java
+        │   │   │   │       └── status/
+        │   │   │   │           ├── ErrorCode.java
+        │   │   │   │           └── SuccessCode.java
+        │   │   │   │
+        │   │   │   ├── config/                  # 설정 클래스들
+        │   │   │   │   ├── SecurityConfig.java
+        │   │   │   │   ├── SwaggerConfig.java
+        │   │   │   │   └── WebConfig.java
+        │   │   │   │
+        │   │   │   ├── entity/                  # 공통 엔티티
+        │   │   │   │   └── BaseTimeEntity.java
+        │   │   │   │
+        │   │   │   ├── exception/               # 예외 처리
+        │   │   │   │   ├── ExceptionAdvice.java
+        │   │   │   │   ├── GeneralException.java
+        │   │   │   │   └── handler/
+        │   │   │   │       └── GeneralHandler.java
+        │   │   │   │
+        │   │   │   └── jwt/                     # JWT 인증
+        │   │   │       ├── LoginService.java
+        │   │   │       ├── SecurityUtils.java
+        │   │   │       ├── TokenDTO.java
+        │   │   │       ├── TokenProvider.java
+        │   │   │       └── filter/
+        │   │   │           ├── JwtAuthenticationFilter.java
+        │   │   │           ├── LoginFilter.java
+        │   │   │           └── LogoutFilter.java
+        │   │   │
+        │   │   └── domain/                      # 도메인별 모듈 (DDD 패턴)
+        │   │       ├── enums/                   # 열거형(enmus) 사용
+        │   │       │   ├── DiabetesType.java
+        │   │       │   ├── ExerciseType.java
+        │   │       │   ├── Gender.java
+        │   │       │   ├── Sensor.java
+        │   │       │   └── Status.java
+        │   │       │
+        │   │       ├── exercise/                # 운동 도메인
+        │   │       │   ├── controller/
+        │   │       │   │   └── ExerciseController.java
+        │   │       │   ├── dto/
+        │   │       │   │   ├── ExerciseRequestDTO.java
+        │   │       │   │   └── ExerciseResponseDTO.java
+        │   │       │   ├── entity/
+        │   │       │   │   └── Exercise.java
+        │   │       │   ├── repository/
+        │   │       │   │   └── ExerciseRepository.java
+        │   │       │   └── service/
+        │   │       │       └── ExerciseService.java
+        │   │       │
+        │   │       ├── member/                  # 사용자 도메인
+        │   │       │   ├── annotation/
+        │   │       │   │   ├── AuthUser.java
+        │   │       │   │   └── AuthUserArgumentResolver.java
+        │   │       │   ├── controller/
+        │   │       │   │   └── MemberController.java
+        │   │       │   ├── dto/
+        │   │       │   │   ├── CustomUserDetails.java
+        │   │       │   │   ├── MemberRequestDTO.java
+        │   │       │   │   ├── MemberResponseDTO.java
+        │   │       │   │   ├── MemberSignDTO.java
+        │   │       │   │   └── RefreshTokenDTO.java
+        │   │       │   ├── entity/
+        │   │       │   │   ├── Member.java
+        │   │       │   │   └── Refresh.java
+        │   │       │   ├── repository/
+        │   │       │   │   ├── MemberRepository.java
+        │   │       │   │   └── RefreshRepository.java
+        │   │       │   └── service/
+        │   │       │       ├── CodeGenerator.java
+        │   │       │       ├── CustomUserDetailService.java
+        │   │       │       ├── MemberMapper.java
+        │   │       │       └── MemberService.java
+        │   │       │
+        │   │       ├── parent/                  # 부모 도메인
+        │   │       │   └── entity/
+        │   │       │       └── Parent.java
+        │   │       │
+        │   │       └── parentChild/             # 부모-자녀 관계
+        │   │           ├── entity/
+        │   │           │   └── ParentChild.java
+        │   │           └── repository/
+        │   │               └── ParentChildRepository.java
+        │   │
+      
 
+```
 ---
 
 ### 확장성 고려
