@@ -284,8 +284,8 @@ Spring-Service/
 
 ### 👨‍💻 백엔드 개발자
 
-- **정준영 (June Young Jung)** - AI-Service 🟢  
+-  AI-Service 🟢  
   🔗 [정준영](https://github.com/Jung0522)
-- **김채원 (Cheolsu Kim)** - Spring Boot CRUD 🔵  
+- Spring-Service 🔵  
   🔗 [GitHub](https://github.com/kimcheolsu)
 
