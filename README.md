@@ -8,11 +8,6 @@
 
 
 
-### 🚀 핵심 프로세스
-
----
-
-
 
 # 기술 구현
 
@@ -138,4 +133,13 @@ AI-Service/
 1. **체계적인 로깅 설정:** `app/core/logging.py`  
 2. **성능 추적:** `app/utils/monitoring/performance_monitor.py`  
 3. **에러 통계 수집:** `app/utils/monitoring/monitoring.py`  
-4. **시스템 상태 모니터링:** `app/api/v1/endpoints/health.py`  
+4. **시스템 상태 모니터링:** `app/api/v1/endpoints/health.py`
+
+
+### 👨‍💻 개발자
+
+- **정준영 (June Young Jung)** - AI-Service 🟢  
+  🔗 [GitHub](https://github.com/Jung0522)
+- **김철수 (Cheolsu Kim)** - Spring Boot CRUD 🔵  
+  🔗 [GitHub](https://github.com/kimcheolsu)
+
