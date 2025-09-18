@@ -294,7 +294,7 @@ Spring-Service/
 # 핵심 로직
 
 <img width="875" height="491" alt="스크린샷 2025-09-18 오전 9 26 26" src="https://github.com/user-attachments/assets/ef76c592-f469-428e-ae2f-694d2f333bd4" />
-
+<img width="881" height="495" alt="Image" src="https://github.com/user-attachments/assets/7f229af1-f2de-4b07-b253-05a64704879e" />
 
 ---
 
