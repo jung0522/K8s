@@ -59,7 +59,7 @@ AI-Service/
 
 ---
 
-### ✅ 확장성 고려
+### 확장성 고려
 - 향후 기능 추가 시 유연하게 확장 가능한가?
 
 #### AI-Service (Python)
@@ -72,7 +72,7 @@ AI-Service/
 
 ---
 
-### ✅ 성능 효율성
+### 성능 효율성
 - 불필요한 오버엔지니어링 없이 효율적 구현하였는가?
 
 #### AI-Service (Python)
@@ -97,9 +97,9 @@ AI-Service/
 ### 코드 품질
 - 가독성, 모듈화, 재사용성을 고려한 코드 작성 여부  
 
-1. **가독성:** 명확한 함수명과 변수명 (`app/utils/business/glucose_utils.py`)  
+1. **가독성:** 명확한 함수명과 변수명 `app/utils/business/glucose_utils.py`  
 2. **모듈화:** 계층별 모듈 분리  
-3. **재사용성:** 공통 유틸리티 함수 (`app/utils/error/error_handler.py`)  
+3. **재사용성:** 공통 유틸리티 함수 `app/utils/error/error_handler.py`  
 4. **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`  
 
 ---
