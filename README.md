@@ -3,7 +3,6 @@
 # 기술 구현
 
 ### 기술 스택 적합성
-- 문제 해결에 적절한 기술 스택 선택이 되었는가?
 
 - **Flask (Python 3.11)** - AI 서비스 (LLM 기반 퀘스트 생성, RAG 기반 전문적 혈당 분석 후 피드백 제공)  
 - **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 중심 설계, 에러 헨들링·보안·로깅 준수)
@@ -14,7 +13,6 @@
 ---
 
 ### 아키텍처 설계
-- 시스템 구조가 요구사항에 맞게 설계되었는가?
 
 #### AI-Service (Python) : **계층화된 아키텍처**
 
@@ -161,7 +159,6 @@ Spring-Service/
 ---
 
 ### 확장성 고려
-- 향후 기능 추가 시 유연하게 확장 가능한가?
 
 #### AI-Service (Python)
 1. **새로운 API 엔드포인트 추가:** `app/api/v1/endpoints/`  
@@ -177,7 +174,6 @@ Spring-Service/
 3. 커스텀 어노테이션으로 확장성 확보: `domain/member/annotation/AuthUser.java` - 인증 사용자 주입
 
 ### 효율성 고려 
-- 불필요한 오버엔지니어링 없이 효율적 구현하였는가?
 
 #### AI-Service(Python): 
 1. **캐싱 전략:** `app/utils/auth/jwt_auth.py` – 토큰 캐싱  
@@ -193,7 +189,6 @@ Spring-Service/
 
 ---
 ### 코드 품질
-- 가독성, 모듈화, 재사용성을 고려한 코드 작성 여부
 
 #### AI-Service(Python): 
 1. **가독성:** `app/utils/business/glucose_utils.py` - 명확한 함수명과 변수명  
@@ -210,7 +205,6 @@ Spring-Service/
 ---
 
 ### 유지보수성
-- 코드 수정 및 기능 개선이 용이한가?  
 
 #### AI-Service(Python)
 1. **의존성 주입:** `app/__init__.py` - 팩토리 패턴  
@@ -224,7 +218,6 @@ Spring-Service/
 ---
 
 ### 에러 핸들링
-- API 응답, 예외 상황에 대해 적절히 처리하였는가?  
 
 #### AI-Service(Python)
 1. **계층화된 에러 클래스:** `app/utils/error/error_handler.py`  
@@ -239,7 +232,6 @@ Spring-Service/
 ---
 
 ### 사용자 경험
-- 오류 발생 시 사용자 친화적 메시지를 제공하였는가?  
 
 #### AI-Service(Python)
 1. **구조화된 사용자 메시지:** `app/utils/error/user_messages.py`  
@@ -252,7 +244,6 @@ Spring-Service/
 ---
 
 ### 보안 고려사항
-- 입력 검증, 인증/인가, 민감정보 보호 여부  
 
 #### AI-Service(Python)
 1. **포괄적인 입력 검증:** `app/utils/auth/input_validator.py`  
@@ -268,7 +259,6 @@ Spring-Service/
 ---
 
 ### 모니터링
-- 로깅, 디버깅이 용이한가?
 
 #### AI-Service(Python)
 1. **체계적인 로깅 설정:** `app/core/logging.py`  
