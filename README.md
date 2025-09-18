@@ -18,8 +18,6 @@
 
 #### AI-Service (Python) : **계층화된 아키텍처**
 
-## 📂 프로젝트 구조
-
 ```plaintext
 AI-Service/
 ├── main.py                          # 애플리케이션 진입점
