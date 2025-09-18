@@ -12,7 +12,7 @@
 - **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 중심 설계, 에러 헨들링·보안·로깅 준수)
 - **MySQL** - 메인 데이터베이스  
 - **ChromaDB** - 벡터 데이터베이스 (RAG용)  
-- **Docker Compose** - 컨테이너화 및 로컬/배포 환경 관리
+- **Docker Compose** - 컨테이너화 및 로컬 / 배포 환경 관리
 - **AWS Ec2** - 컨테이너화 및 배포 
 
 
