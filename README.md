@@ -294,11 +294,12 @@ Spring-Service/
 <img width="875" height="491" alt="스크린샷 2025-09-18 오전 9 26 26" src="https://github.com/user-attachments/assets/ef76c592-f469-428e-ae2f-694d2f333bd4" />
 <img width="881" height="495" alt="Image" src="https://github.com/user-attachments/assets/7f229af1-f2de-4b07-b253-05a64704879e" />
 
-현 시스템 RAG: ChromaDB를 활용한 벡터 검색과 의료 지식 기반 컨텍스트 강화를 통해 개인화된 혈당 분석을 제공
-1. 자동 쿼리 생성: 혈당 데이터를 검색어로 자동 변환해 사용
+현 시스템 RAG 기반 LLM 답변 재공: ChromaDB를 활용한 벡터 검색과 지식 기반 컨텍스트 강화를 통해 개인화된 혈당 분석을 제공
+1. 자동 쿼리 생성: 혈당 관련 데이터를 검색어로 자동 변환해 사용
 2. 임베딩된 지식 검색: ChromaDB에서 관련 문서 검색
 3. 프롬프트 강화: API에 맞는 프롬포트 + 의료 지식 컨텍스트
-3. 개인화 응답: 아이/부모별 맞춤 톤앤매너(프롬포트로 LLM 톤앤매너 조절 용이)
+4. 개인화 응답: 아이/부모별 맞춤 톤앤매너(프롬포트로 LLM 톤앤매너 조절 용이)
+5. 응답 제공: RAG 적용으로 사용자 맞춤형 응답 제공
 
 ---
 
