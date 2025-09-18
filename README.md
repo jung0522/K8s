@@ -294,9 +294,7 @@ Spring-Service/danjjang/
 <img width="875" height="491" alt="스크린샷 2025-09-18 오전 9 26 26" src="https://github.com/user-attachments/assets/ef76c592-f469-428e-ae2f-694d2f333bd4" />
 <img width="881" height="495" alt="Image" src="https://github.com/user-attachments/assets/7f229af1-f2de-4b07-b253-05a64704879e" />
 
-데일리 퀘스트:
-데이터 기반 개인화: 함수를 통해 계산된 혈당 지표들을 통계적으로 분석하여 개인별 맞춤 퀘스트 생성
-통계적 혈당 분석 + LLM 창의성 + 게이미피케이션을 결합한 개인화된 혈당 관리 퀘스트 생성
+LLM을 활용한 수치·기록 기반 맞춤형 퀘스트 제공: 함수를 통해 계산된 혈당 지표들을 통계적으로 분석하여 개인별 맞춤 퀘스트 생성(통계적 혈당 분석 + LLM 창의성 + 게이미피케이션을 결합한 개인화된 혈당 관리 퀘스트 생성)
 
 AI 분석 
 현 시스템 RAG 기반 LLM 답변 재공: ChromaDB를 활용한 벡터 검색과 지식 기반 컨텍스트 강화를 통해 개인화된 혈당 분석을 제공
