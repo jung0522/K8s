@@ -6,7 +6,7 @@
 - 문제 해결에 적절한 기술 스택 선택이 되었는가?
 
 - **Flask (Python 3.11)** - AI 서비스 (LLM 기반 퀘스트 생성, RAG 기반 전문적 혈당 분석 후 피드백 제공)  
-- **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 구조 설계, 하나의 엔티티로 부모/아이 회원 인증)  
+- **Spring Boot (Java 17)** - 기본적인 CRUD (도메인 중심 설계)
 - **MySQL** - 메인 데이터베이스  
 - **ChromaDB** - 벡터 데이터베이스 (RAG용)  
 - **Docker Compose** - 컨테이너화 및 배포  
@@ -55,7 +55,7 @@ AI-Service/
 └── requirements.txt                 # 의존성 관리
 ```
 
-#### Spring-Service/danjjang (Java)
+#### Spring-Service/danjjang (Java): **계층화된 아키텍처**
 ```plaintext
 Spring-Service/
 └── danjjang/                                    # 메인 Spring Boot 프로젝트
