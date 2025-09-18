@@ -139,7 +139,7 @@ AI-Service/
 ### 👨‍💻 개발자
 
 - **정준영 (June Young Jung)** - AI-Service 🟢  
-  🔗 [GitHub](https://github.com/Jung0522)
-- **김철수 (Cheolsu Kim)** - Spring Boot CRUD 🔵  
+  🔗 [정준영](https://github.com/Jung0522)
+- **김채원 (Cheolsu Kim)** - Spring Boot CRUD 🔵  
   🔗 [GitHub](https://github.com/kimcheolsu)
 
