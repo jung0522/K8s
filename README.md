@@ -202,7 +202,7 @@ Spring-Service/
 4. **데코레이터 패턴 활용:** `app/utils/auth/jwt_auth.py`
 
 #### Spring-Service/danjjang (Java)
-1. **가독성:**: `domain/member/service/MemberService.java` - 비즈니스 로직의 명확한 표현
+1. **가독성:** `domain/member/service/MemberService.java` - 비즈니스 로직의 명확한 표현
 2. **모듈화:** 계층별 모듈 분리  
 3. **재사용성:** `common/apiPayload/ApiResponse.java` - 공통 유틸리티 함수,
 4. **데코레이터 패턴 활용:** `common/jwt/filter/JwtAuthenticationFilter.java` 
