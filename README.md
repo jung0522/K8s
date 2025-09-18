@@ -292,12 +292,12 @@ Spring-Service/danjjang/
 # 핵심 로직
 
 <img width="875" height="491" alt="스크린샷 2025-09-18 오전 9 26 26" src="https://github.com/user-attachments/assets/ef76c592-f469-428e-ae2f-694d2f333bd4" />
-<img width="881" height="495" alt="Image" src="https://github.com/user-attachments/assets/7f229af1-f2de-4b07-b253-05a64704879e" />
+<img width="874" height="489" alt="스크린샷 2025-09-18 오후 11 12 54" src="https://github.com/user-attachments/assets/8d4ac7ac-d3b7-4017-a5d9-3cefb538e705" />
+
 
 LLM을 활용한 수치·기록 기반 맞춤형 퀘스트 제공: 함수를 통해 계산된 혈당 지표들을 통계적으로 분석하여 개인별 맞춤 퀘스트 생성(통계적 혈당 분석 + LLM 창의성 + 게이미피케이션을 결합한 개인화된 혈당 관리 퀘스트 생성)
 
-AI 분석 
-현 시스템 RAG 기반 LLM 답변 재공: ChromaDB를 활용한 벡터 검색과 지식 기반 컨텍스트 강화를 통해 개인화된 혈당 분석을 제공
+케릭터와 함께 성장하는 리포트: LLM에 RAG 기법 도입으로 ChromaDB를 활용한 벡터 검색과 지식 기반 컨텍스트 강화를 통해 개인화된 혈당 분석을 제공
 1. 자동 쿼리 생성: 혈당 관련 데이터를 검색어로 자동 변환해 사용
 2. 임베딩된 지식 검색: ChromaDB에서 관련 문서 검색
 3. 프롬프트 강화: API에 맞는 프롬포트 + 의료 지식 컨텍스트
