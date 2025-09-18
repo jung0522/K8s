@@ -184,6 +184,7 @@ Spring-Service/
 2. 인터페이스 기반 설계: `domain/member/repository/MemberRepository.java` - CrudRepository 확장
 3. 커스텀 어노테이션으로 확장성 확보: `domain/member/annotation/AuthUser.java` - 인증 사용자 주입
 
+---
 ### 효율성 고려 
 
 #### AI-Service(Python): 
